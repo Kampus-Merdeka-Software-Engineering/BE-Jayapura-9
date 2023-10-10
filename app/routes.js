@@ -9,8 +9,9 @@ router.get("/contact-us", ContactController.contactUs)
 // Endpoint untuk menyimpan data kontak
 router.post("/contact", ContactController.contact);
 
+router.get("/program-register", programController.programRegister)
 // Endpoint untuk menyimpan data pendaftaran program
-router.post('/register', programController);
+router.post('/register', programController.program);
 
 module.exports = router;
 
